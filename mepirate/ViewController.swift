@@ -9,6 +9,7 @@
 import UIKit
 import Alamofire
 import TTGSnackbar
+import coreData
 
 
 class ViewController: UIViewController {
@@ -94,6 +95,9 @@ class ViewController: UIViewController {
             }
         }
         
+        
+    }
+    func parseJsontoDb(){
         
     }
 

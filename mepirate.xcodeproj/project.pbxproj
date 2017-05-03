@@ -13,6 +13,8 @@
 		0431A61A1EBA09A100CD24CD /* mepirate.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0431A6181EBA09A100CD24CD /* mepirate.xcdatamodeld */; };
 		0431A61C1EBA09A100CD24CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0431A61B1EBA09A100CD24CD /* Assets.xcassets */; };
 		0431A61F1EBA09A100CD24CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0431A61D1EBA09A100CD24CD /* LaunchScreen.storyboard */; };
+		0431A6481EBA262100CD24CD /* configFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431A6471EBA262100CD24CD /* configFile.swift */; };
+		F9A82B36909FA30D3233A50C /* Pods_mepirate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC02A24B3F825DBB04F61E59 /* Pods_mepirate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		0431A61B1EBA09A100CD24CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0431A61E1EBA09A100CD24CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0431A6201EBA09A100CD24CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0431A6471EBA262100CD24CD /* configFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = configFile.swift; sourceTree = "<group>"; };
+		618D4794E43457E75AF31AC7 /* Pods-mepirate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mepirate.release.xcconfig"; path = "Pods/Target Support Files/Pods-mepirate/Pods-mepirate.release.xcconfig"; sourceTree = "<group>"; };
+		CC02A24B3F825DBB04F61E59 /* Pods_mepirate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_mepirate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F423F918BF254A32088E8447 /* Pods-mepirate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mepirate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-mepirate/Pods-mepirate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9A82B36909FA30D3233A50C /* Pods_mepirate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				0431A6101EBA09A100CD24CD /* mepirate */,
 				0431A60F1EBA09A100CD24CD /* Products */,
+				2967DB23F7D964B04B4F75E3 /* Pods */,
+				3D8700EA74519751200EA999 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +67,7 @@
 			children = (
 				0431A6111EBA09A100CD24CD /* AppDelegate.swift */,
 				0431A6131EBA09A100CD24CD /* ViewController.swift */,
+				0431A6471EBA262100CD24CD /* configFile.swift */,
 				0431A6151EBA09A100CD24CD /* Main.storyboard */,
 				0431A61B1EBA09A100CD24CD /* Assets.xcassets */,
 				0431A61D1EBA09A100CD24CD /* LaunchScreen.storyboard */,
@@ -67,6 +77,23 @@
 			path = mepirate;
 			sourceTree = "<group>";
 		};
+		2967DB23F7D964B04B4F75E3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F423F918BF254A32088E8447 /* Pods-mepirate.debug.xcconfig */,
+				618D4794E43457E75AF31AC7 /* Pods-mepirate.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D8700EA74519751200EA999 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC02A24B3F825DBB04F61E59 /* Pods_mepirate.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0431A6231EBA09A100CD24CD /* Build configuration list for PBXNativeTarget "mepirate" */;
 			buildPhases = (
+				9F4EC0C217E329688875A8E2 /* [CP] Check Pods Manifest.lock */,
 				0431A60A1EBA09A100CD24CD /* Sources */,
 				0431A60B1EBA09A100CD24CD /* Frameworks */,
 				0431A60C1EBA09A100CD24CD /* Resources */,
+				BE1EE0EB3BC4668C01FB0261 /* [CP] Embed Pods Frameworks */,
+				9ED4F2EF6F606E742C45937E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,12 +165,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9ED4F2EF6F606E742C45937E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mepirate/Pods-mepirate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F4EC0C217E329688875A8E2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BE1EE0EB3BC4668C01FB0261 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-mepirate/Pods-mepirate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0431A60A1EBA09A100CD24CD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0431A6141EBA09A100CD24CD /* ViewController.swift in Sources */,
+				0431A6481EBA262100CD24CD /* configFile.swift in Sources */,
 				0431A61A1EBA09A100CD24CD /* mepirate.xcdatamodeld in Sources */,
 				0431A6121EBA09A100CD24CD /* AppDelegate.swift in Sources */,
 			);
@@ -261,6 +340,7 @@
 		};
 		0431A6241EBA09A100CD24CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F423F918BF254A32088E8447 /* Pods-mepirate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BJC9Q9SRTS;
@@ -274,6 +354,7 @@
 		};
 		0431A6251EBA09A100CD24CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 618D4794E43457E75AF31AC7 /* Pods-mepirate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BJC9Q9SRTS;
@@ -304,6 +385,7 @@
 				0431A6251EBA09A100CD24CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
